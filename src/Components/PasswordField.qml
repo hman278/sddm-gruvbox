@@ -6,6 +6,7 @@ TextField {
   focus: true
   selectByMouse: true
   placeholderText: "Password"
+  placeholderTextColor: config.text
   echoMode: TextInput.Password
   passwordCharacter: "•"
   passwordMaskDelay: config.PasswordShowLastLetter
