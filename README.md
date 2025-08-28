@@ -1,6 +1,6 @@
 <div align="center">
   <h3>SDDM</h3>
-  <p>Gruvbox theme for SDDM</p>
+  <p>Gruvbox theme for SDDM, forked from [he1senbrg/sddm-gruvbox](https://github.com/he1senbrg/sddm-gruvbox)</p>
 </div>
 
 <p align="center">
