@@ -1,6 +1,6 @@
 <div align="center">
   <h3>SDDM</h3>
-  <p>Gruvbox theme for SDDM, forked from [he1senbrg/sddm-gruvbox](https://github.com/he1senbrg/sddm-gruvbox)</p>
+  <p>Gruvbox theme for SDDM</p>
 </div>
 
 <p align="center">
@@ -32,3 +32,6 @@ This project is based on the [Catppuccin SDDM theme](https://github.com/catppucc
 
 ### License
 This project is licensed under [MIT License](https://github.com/he1senbrg/sddm-gruvbox/blob/main/LICENSE).
+
+Original work Copyright (c) [2025] [he1senbrg](https://github.com/he1senbrg)
+Modified work Copyright (c) [2025] [hman278](https://github.com/hman278)
