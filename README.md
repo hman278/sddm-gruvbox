@@ -34,4 +34,5 @@ This project is based on the [Catppuccin SDDM theme](https://github.com/catppucc
 This project is licensed under [MIT License](https://github.com/he1senbrg/sddm-gruvbox/blob/main/LICENSE).
 
 Original work Copyright (c) [2025] [he1senbrg](https://github.com/he1senbrg)
+
 Modified work Copyright (c) [2025] [hman278](https://github.com/hman278)
