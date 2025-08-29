@@ -11,8 +11,8 @@ Item {
     hoverEnabled: true
     icon {
       source: Qt.resolvedUrl("../icons/power.svg")
-      height: height
-      width: width
+      height: height * config.iconScale
+      width: width * config.iconScale
       color: config.onPrimary
     }
     background: Rectangle {
@@ -26,7 +26,7 @@ Item {
         when: powerButton.hovered
         PropertyChanges {
           target: powerButtonBackground
-          color: config.hower
+          color: config.hover
         }
       }
     ]

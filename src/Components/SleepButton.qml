@@ -11,8 +11,8 @@ Item {
     hoverEnabled: true
     icon {
       source: Qt.resolvedUrl("../icons/sleep.svg")
-      height: height
-      width: width
+      height: height * config.iconScale
+      width: width * config.iconScale
       color: config.onPrimary
     }
     background: Rectangle {
@@ -26,7 +26,7 @@ Item {
         when: sleepButton.hovered
         PropertyChanges {
           target: sleepButtonBg
-          color: config.hower
+          color: config.hover
         }
       }
     ]

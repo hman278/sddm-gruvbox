@@ -63,8 +63,8 @@ Item {
     hoverEnabled: true
     icon {
       source: Qt.resolvedUrl("../icons/settings.svg")
-      height: height
-      width: width
+      height: height * config.iconScale
+      width: width * config.iconScale
       color: config.onPrimary
     }
     background: Rectangle {
@@ -78,7 +78,7 @@ Item {
         when: sessionButton.down
         PropertyChanges {
           target: sessionButtonBackground
-          color: config.hower
+          color: config.hover
         }
       },
       State {
@@ -86,7 +86,7 @@ Item {
         when: sessionButton.hovered
         PropertyChanges {
           target: sessionButtonBackground
-          color: config.hower
+          color: config.hover
         }
       },
       State {
@@ -94,7 +94,7 @@ Item {
         when: sessionPopup.visible
         PropertyChanges {
           target: sessionButtonBackground
-          color: config.hower
+          color: config.hover
         }
       }
     ]

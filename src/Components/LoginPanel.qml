@@ -6,13 +6,13 @@ Item {
   property var user: userField.text
   property var password: passwordField.text
   property var session: sessionPanel.session
-  property var inputHeight: Screen.height * 0.032
-  property var inputWidth: Screen.width * 0.16
-  Row {
+  property var inputHeight: Screen.height * 0.028
+  property var inputWidth: Screen.width * 0.1
+  Column {
     spacing: 8
     anchors {
       bottom: parent.bottom
-      horizontalCenter: parent.horizontalCenter
+      right: parent.right
     }
     SessionPanel {
       id: sessionPanel
@@ -47,6 +47,10 @@ Item {
       width: parent.width
       onAccepted: loginButton.clicked()
     }
+    Item {
+        height: 16
+        width: 1
+    }
     Button {
       id: loginButton
       height: inputHeight
@@ -59,7 +63,7 @@ Item {
         font {
           family: config.Font
           pointSize: config.FontSize
-          bold: true
+          bold: false
         }
         horizontalAlignment: Text.AlignHCenter
         verticalAlignment: Text.AlignVCenter
@@ -77,7 +81,7 @@ Item {
           when: loginButton.down
           PropertyChanges {
             target: buttonBackground
-            color: config.hower
+            color: config.hover
           }
           PropertyChanges {
             target: buttonText
@@ -88,7 +92,7 @@ Item {
           when: loginButton.hovered
           PropertyChanges {
             target: buttonBackground
-            color: config.hower
+            color: config.hover
           }
           PropertyChanges {
             target: buttonText

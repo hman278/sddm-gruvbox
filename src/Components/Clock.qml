@@ -6,7 +6,6 @@ Column {
     id: clock
     spacing: 0
 
-
     anchors {
       margins: 10
       top: parent.top
@@ -20,21 +19,13 @@ Column {
         color: config.text
         renderType: Text.QtRendering
         font.family: config.Font
-        font.pixelSize: 100
+        font.pixelSize: 96
+
+        style: Text.Outline
+        styleColor: config.outline
+
         function updateTime() {
             text = new Date().toLocaleTimeString(Qt.locale(config.Locale), config.HourFormat == "long" ? Locale.LongFormat : config.HourFormat !== "" ? config.HourFormat : Locale.ShortFormat)
-        }
-    }
-
-    Label {
-        id: dateLabel
-        anchors.horizontalCenter: parent.horizontalCenter
-        color: config.text
-        renderType: Text.QtRendering
-        font.family: config.Font
-        font.pixelSize: 50
-        function updateTime() {
-            text = new Date().toLocaleDateString(Qt.locale(config.Locale), config.DateFormat == "short" ? Locale.ShortFormat : config.DateFormat !== "" ? config.DateFormat : Locale.LongFormat)
         }
     }
 
@@ -43,13 +34,11 @@ Column {
         repeat: true
         running: true
         onTriggered: {
-            dateLabel.updateTime()
             timeLabel.updateTime()
         }
     }
 
     Component.onCompleted: {
-        dateLabel.updateTime()
         timeLabel.updateTime()
     }
 }

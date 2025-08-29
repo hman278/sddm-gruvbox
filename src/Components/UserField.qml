@@ -12,7 +12,7 @@ TextField {
   font {
     family: config.Font
     pointSize: config.FontSize
-    bold: true
+    bold: false
   }
   color: config.text
   horizontalAlignment: Text.AlignHCenter
@@ -24,6 +24,18 @@ TextField {
     color: config.surface0
     radius: 6
     border.color: config.border
+
+     // Add icon to background
+    Image {
+      source: "../icons/user.svg"
+      width: 20
+      height: 20
+      anchors {
+        left: parent.left
+        leftMargin: 10
+        verticalCenter: parent.verticalCenter
+      }
+    }
   }
   states: [
     State {

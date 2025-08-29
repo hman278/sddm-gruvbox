@@ -14,7 +14,7 @@ TextField {
   renderType: Text.NativeRendering
   font.family: config.Font
   font.pointSize: config.FontSize
-  font.bold: true
+  font.bold: false
   color: config.text
   horizontalAlignment: TextInput.AlignHCenter
   background: Rectangle {
