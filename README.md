@@ -29,6 +29,7 @@
 
 This project is based on the [Catppuccin SDDM theme](https://github.com/catppuccin/sddm).
 
+Wallpaper [link](https://gruvbox-wallpapers.pages.dev/)
 
 ### License
 This project is licensed under [MIT License](https://github.com/he1senbrg/sddm-gruvbox/blob/main/LICENSE).
