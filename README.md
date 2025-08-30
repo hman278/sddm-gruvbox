@@ -10,7 +10,7 @@
 
 
 ## Usage
-1. Download your preferred theme variant from the [releases page](https://github.com/he1senbrg/sddm-gruvbox/releases).
+1. Download your preferred theme variant from the [releases page](https://github.com/hman278/sddm-gruvbox/releases).
 2. Extract the downloaded archive into the following directory:  
    `/usr/share/sddm/themes/`
 3. Open the SDDM configuration file located at `/etc/sddm.conf`. Set the theme by adding or modifying the following lines:
@@ -29,6 +29,7 @@
 
 This project is based on the [Catppuccin SDDM theme](https://github.com/catppuccin/sddm).
 
+Wallpaper [link](https://gruvbox-wallpapers.pages.dev/)
 
 ### License
 This project is licensed under [MIT License](https://github.com/he1senbrg/sddm-gruvbox/blob/main/LICENSE).
