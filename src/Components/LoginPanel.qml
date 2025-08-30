@@ -63,7 +63,7 @@ Item {
         font {
           family: config.Font
           pointSize: config.FontSize
-          bold: false
+          bold: true
         }
         horizontalAlignment: Text.AlignHCenter
         verticalAlignment: Text.AlignVCenter
@@ -125,6 +125,7 @@ Item {
 
     function onLoginFailed() {
       passwordField.text = ""
+      passwordField.hasError = true
       passwordField.focus = true
     }
   }

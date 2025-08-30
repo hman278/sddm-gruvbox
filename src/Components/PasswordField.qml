@@ -17,27 +17,54 @@ TextField {
   font.bold: false
   color: config.text
   horizontalAlignment: TextInput.AlignHCenter
+
+  // Property to track error state
+  property bool hasError: false
+  
+  // Clear error when user starts typing
+  onTextChanged: {
+    if (hasError && text.length > 0) {
+      hasError = false
+    }
+  }
+
   background: Rectangle {
     id: passFieldBackground
     radius: 6
     color: config.surface0
-    border.color: config.border
+    border.color: passwordField.hasError ? config.borderError : config.border  
+    border.width: passwordField.hasError ? 2 : 1
   }
+
   states: [
     State {
+      name: "error"
+      when: passwordField.hasError
+      PropertyChanges {
+        target: passFieldBackground
+        color: config.surface0
+        border.color: config.borderError
+        border.width: 2
+      }
+    },
+    State {
       name: "focused"
-      when: passwordField.activeFocus
+      when: passwordField.activeFocus && !passwordField.hasError
       PropertyChanges {
         target: passFieldBackground
         color: config.surface1
+        border.color: config.border
+        border.width: 1
       }
     },
     State {
       name: "hovered"
-      when: passwordField.hovered
+      when: !passwordField.hasError && !passwordField.activeFocus
       PropertyChanges {
         target: passFieldBackground
         color: config.surface1
+        border.color: config.border
+        border.width: 1
       }
     }
   ]
